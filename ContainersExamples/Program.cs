@@ -40,6 +40,16 @@
                 strings.Add(Convert.ToString(value));
             }
             Console.WriteLine($"After sorting IntegerList elements: [{String.Join(", ", strings.ToArray())}]");
+
+            Console.WriteLine($"Element 11 exists ? {integerList.Contains(11)}");
+            if(integerList.Find(x => x == 1) == 0)
+            {
+                Console.WriteLine("1 not finded");
+            }
+            else
+            {
+                Console.WriteLine("1 finded");
+            }
         }
     }
 }
