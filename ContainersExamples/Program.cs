@@ -4,6 +4,8 @@
     {
         static void Main()
         {
+            Console.WriteLine("Пишу из кабинета 50");
+
             List<int> integerList = new() { 2, 1, 3 };
             Console.WriteLine("first element = " + integerList.ElementAt(0));
             Console.WriteLine("last element = " + integerList.ElementAt(integerList.Count - 1));
