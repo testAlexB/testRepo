@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.clientControl1 = new DemoUIComponents.ClientControl();
+            this.MainLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // clientControl1
+            // MainLayout
             // 
-            this.clientControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clientControl1.Location = new System.Drawing.Point(38, 44);
-            this.clientControl1.Name = "clientControl1";
-            this.clientControl1.Size = new System.Drawing.Size(436, 89);
-            this.clientControl1.TabIndex = 0;
+            this.MainLayout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.MainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainLayout.Location = new System.Drawing.Point(0, 0);
+            this.MainLayout.Name = "MainLayout";
+            this.MainLayout.Size = new System.Drawing.Size(503, 450);
+            this.MainLayout.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.clientControl1);
+            this.ClientSize = new System.Drawing.Size(503, 450);
+            this.Controls.Add(this.MainLayout);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "База партнёров";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DemoUIComponents.ClientControl clientControl1;
+        private System.Windows.Forms.FlowLayoutPanel MainLayout;
     }
 }
 
