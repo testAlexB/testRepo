@@ -28,13 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.clientControl1 = new DemoUIComponents.ClientControl();
+            this.SuspendLayout();
+            // 
+            // clientControl1
+            // 
+            this.clientControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clientControl1.Location = new System.Drawing.Point(38, 44);
+            this.clientControl1.Name = "clientControl1";
+            this.clientControl1.Size = new System.Drawing.Size(436, 89);
+            this.clientControl1.TabIndex = 0;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.clientControl1);
+            this.Name = "MainForm";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private DemoUIComponents.ClientControl clientControl1;
     }
 }
 
