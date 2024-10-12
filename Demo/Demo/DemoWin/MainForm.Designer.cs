@@ -48,6 +48,7 @@
             this.Controls.Add(this.MainLayout);
             this.Name = "MainForm";
             this.Text = "База партнёров";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DemoLib.Models
 {
@@ -14,7 +15,8 @@ namespace DemoLib.Models
                 Director = "А.Бойков",
                 PhoneNumber = "+7-900-112-17-42",
                 Type = "ЗАО",
-                Discount = 10
+                Discount = 10,
+                Rating = 10
             });
 
             clients_.Add(new Client
@@ -24,7 +26,8 @@ namespace DemoLib.Models
                 Director = "В.Терёшин",
                 PhoneNumber = "+7-910-640-47-12",
                 Type = "ООО",
-                Discount = 20
+                Discount = 20,
+                Rating = 1
             });
         }
 
@@ -37,5 +40,7 @@ namespace DemoLib.Models
         {
             return clients_.Count;
         }
+
+        public event Action UpdatedClients;
     }
 }

@@ -7,7 +7,7 @@ namespace DemoLib.Presenters
     public class ClientPresenter
     {
         private IClientsModel model_;
-        private List<IClientView> views_;
+        private List<IClientView> views_ = new List<IClientView>();
 
         public ClientPresenter(IClientsModel model)
         {
@@ -16,7 +16,7 @@ namespace DemoLib.Presenters
             model_.UpdatedClients += Model__UpdatedClients;
         }
 
-        private void Model__UpdatedClients()
+        public void Model__UpdatedClients()
         {
             List<Client> clients = model_.GetClients();
             for (int i = 0; i < clients.Count; i++)

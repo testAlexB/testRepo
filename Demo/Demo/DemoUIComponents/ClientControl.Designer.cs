@@ -101,6 +101,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "ClientControl";
             this.Size = new System.Drawing.Size(407, 102);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ClientControl_MouseClick);
             this.MouseEnter += new System.EventHandler(this.ClientControl_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.ClientControl_MouseLeave);
             this.ResumeLayout(false);

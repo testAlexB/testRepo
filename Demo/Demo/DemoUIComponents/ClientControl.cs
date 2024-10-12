@@ -9,6 +9,7 @@ namespace DemoUIComponents
     public partial class ClientControl: UserControl, IClientView
     {
         private Color initColor_;
+        private Client client_;
         public ClientControl()
         {
             InitializeComponent();
@@ -30,13 +31,21 @@ namespace DemoUIComponents
 
         }
 
+        public event ClientHandler ClientSelected;
+
         public void LoadClient(Client client)
         {
-            CompanyLabel.Text = client.Type + "|" + client.Name;
+            CompanyLabel.Text = client.Type + " | " + client.Name;
             DirectorLabel.Text = client.Director;
             TelephoneLabel.Text = client.PhoneNumber;
             RatingLabel.Text = "Рейтинг: " + Convert.ToString(client.Rating);
             DiscountLabel.Text = client.Discount  + "%";
+            client_ = client;
+        }
+
+        private void ClientControl_MouseClick(object sender, MouseEventArgs e)
+        {
+            ClientSelected?.Invoke(client_);
         }
     }
 }
