@@ -39,11 +39,12 @@
             // 
             this.CompanyLabel.AutoSize = true;
             this.CompanyLabel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CompanyLabel.Location = new System.Drawing.Point(13, 15);
+            this.CompanyLabel.Location = new System.Drawing.Point(12, 15);
             this.CompanyLabel.Name = "CompanyLabel";
             this.CompanyLabel.Size = new System.Drawing.Size(270, 22);
             this.CompanyLabel.TabIndex = 0;
             this.CompanyLabel.Text = "Тип | Наименование партнёра";
+            this.CompanyLabel.Click += new System.EventHandler(this.CompanyLabel_Click);
             // 
             // DiscountLabel
             // 
@@ -59,30 +60,30 @@
             // DirectorLabel
             // 
             this.DirectorLabel.AutoSize = true;
-            this.DirectorLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DirectorLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DirectorLabel.Location = new System.Drawing.Point(14, 46);
             this.DirectorLabel.Name = "DirectorLabel";
-            this.DirectorLabel.Size = new System.Drawing.Size(56, 14);
+            this.DirectorLabel.Size = new System.Drawing.Size(60, 13);
             this.DirectorLabel.TabIndex = 2;
             this.DirectorLabel.Text = "Директор";
             // 
             // TelephoneLabel
             // 
             this.TelephoneLabel.AutoSize = true;
-            this.TelephoneLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TelephoneLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TelephoneLabel.Location = new System.Drawing.Point(14, 60);
             this.TelephoneLabel.Name = "TelephoneLabel";
-            this.TelephoneLabel.Size = new System.Drawing.Size(91, 14);
+            this.TelephoneLabel.Size = new System.Drawing.Size(93, 13);
             this.TelephoneLabel.TabIndex = 3;
             this.TelephoneLabel.Text = "+7 223 322 22 32";
             // 
             // RatingLabel
             // 
             this.RatingLabel.AutoSize = true;
-            this.RatingLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RatingLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RatingLabel.Location = new System.Drawing.Point(14, 74);
             this.RatingLabel.Name = "RatingLabel";
-            this.RatingLabel.Size = new System.Drawing.Size(65, 14);
+            this.RatingLabel.Size = new System.Drawing.Size(68, 13);
             this.RatingLabel.TabIndex = 4;
             this.RatingLabel.Text = "Рейтинг: 10";
             // 
@@ -90,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(232)))), ((int)(((byte)(211)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.RatingLabel);
             this.Controls.Add(this.TelephoneLabel);
