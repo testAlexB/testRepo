@@ -1,0 +1,21 @@
+<svg
+    width="64"
+    height="64"
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Лупа -->
+  <circle cx="27" cy="27" r="16" stroke="#333" stroke-width="3" />
+  <line x1="40" y1="40" x2="52" y2="52" stroke="#333" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Нота внутри лупы -->
+  <path
+    d="M22 23 L22 37 Q22 39 24 39 Q26 39 26 37 L26 28 L32 26 L32 35"
+    stroke="#333"
+    stroke-width="3"
+    fill="none"
+    stroke-linejoin="round"
+  />
+  <circle cx="26" cy="37" r="3" fill="#333" />
+</svg>
