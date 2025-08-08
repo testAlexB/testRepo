@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android</TargetFrameworks>
+		<AndroidMinSdkVersion>21</AndroidMinSdkVersion>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
@@ -63,6 +64,10 @@
 	  <Folder Include="Resources\Styles\" />
 	  <Folder Include="Resources\AppIcon\" />
 	  <Folder Include="Resources\Splash\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\SearcherCore\SearcherCore.csproj" />
 	</ItemGroup>
 
 </Project>

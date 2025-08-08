@@ -27,6 +27,14 @@
             </Frame.GestureRecognizers>
             
         </Frame>
+
+        <Label x:Name="ResultLabel"
+               Text="Говорите..."
+               FontSize="18"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Margin="0,30" />
     </Grid>
 
 </ContentPage>
