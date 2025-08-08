@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MinusSearcher.MainPage"
+             BackgroundColor="White">
+
+    <Grid>
+        <!--Первая волна круга-->
+        <Border
+            x:Name="Wave1"
+            StyleClass="BorderCircleBase" />
+
+        <!--Вторая волна круга-->
+        <Border
+            x:Name="Wave2"
+            StyleClass="BorderCircleBase" />
+
+        <!--Центрированный синий круг-->
+        <Frame
+            x:Name="PulseButton"
+            StyleClass="CircleBase">
+
+            <Frame.GestureRecognizers>
+                <PointerGestureRecognizer 
+                    PointerEntered="OnPressed" 
+                    PointerExited="OnReleased" />
+            </Frame.GestureRecognizers>
+            
+        </Frame>
+    </Grid>
+
+</ContentPage>

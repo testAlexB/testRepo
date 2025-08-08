@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    
+    <!-- Для основного круга (Frame) -->
+    <Style TargetType="Frame" Class="CircleBase">
+        <Setter Property="WidthRequest" Value="{StaticResource CircleSize}" />
+        <Setter Property="HeightRequest" Value="{StaticResource CircleSize}" />
+        <Setter Property="CornerRadius" Value="{StaticResource CircleRadius}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="Scale" Value="1" />
+        <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}" />
+        <Setter Property="HasShadow" Value="True" />    
+    </Style>
+
+    <!-- Для волн (Border) -->
+    <Style TargetType="Border" Class="BorderCircleBase">
+        <Setter Property="WidthRequest" Value="{StaticResource CircleSize}" />
+        <Setter Property="HeightRequest" Value="{StaticResource CircleSize}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="StrokeShape">
+            <RoundRectangle CornerRadius="{StaticResource CircleRadius}" />
+        </Setter>
+        <Setter Property="Scale" Value="1" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="Stroke" Value="{StaticResource AccentColor}" />
+        <Setter Property="StrokeThickness" Value="3" />
+        <Setter Property="IsVisible" Value="False" />
+        <Setter Property="Opacity" Value="1" />
+    </Style>
+</ResourceDictionary>
