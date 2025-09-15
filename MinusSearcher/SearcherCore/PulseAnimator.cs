@@ -39,15 +39,16 @@
 
         private async Task AnimateWavesLoop(CancellationToken token)
         {
-            int waveIndex = 0;
+            const double waveScale = 2.0;
+            const uint waveDuration = 1000;
 
             while (!token.IsCancellationRequested)
             {
-                var wave = waves_[waveIndex % waves_.Count];
-                await AnimateWave(wave, 2.0, 1200);
+                _ = AnimateWave(waves_[0], waveScale, waveDuration);
+                await Task.Delay((int)(waveDuration / 2), token);
 
-                waveIndex++;
-                await Task.Delay(100, token);
+                _= AnimateWave(waves_[1], waveScale, waveDuration);
+                await Task.Delay((int)(waveDuration / 2), token);
             }
         }
 
