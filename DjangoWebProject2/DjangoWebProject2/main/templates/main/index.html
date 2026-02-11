@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главная</title>
+</head>
+<body>
+    <a href="{% url 'index' %}">Главная</a>
+    <h1>Сообщения</h1>
+
+    <ul>
+        {% for msg in messages %}
+        <li>{{ msg.text }}</li>
+        {% empty %}
+        <li>Сообщений пока нет</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
